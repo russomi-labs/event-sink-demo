@@ -1,62 +1,50 @@
 # http-dynamo-tutorial
-
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
 - [Overview](#overview)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installing](#installing)
 - [Usage](#usage)
-- [Contributing](#contributing)
+  - [To create or update an item](#to-create-or-update-an-item)
+  - [To get all items](#to-get-all-items)
+  - [To get an item](#to-get-an-item)
+  - [To delete an item](#to-delete-an-item)
 - [See Also](#see-also)
+- [Contributing](#contributing)
 
 ## Overview
 
-In this tutorial, you create a serverless API that creates, reads, updates, and deletes items from a DynamoDB table. DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability.
-
-## Getting Started
-
-You can [create](https://cli.github.com/manual/gh_repo_create) a new repo using this template via the `gh` cli:
-
-```bash
-# gh repo create [<name>] [flags]
-gh repo create russomi-labs/my-repo \
-    --template russomi-labs/template
-```
-
-### Prerequisites
-
-What things you need to install the software and how to install them.
-
-```bash
-brew install gh
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
+> In this [tutorial](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-dynamo-db.html), you create a serverless API that creates, reads, updates, and
+> deletes items from a DynamoDB table. DynamoDB is a fully managed NoSQL database
+> service that provides fast and predictable performance with seamless
+> scalability.
 
 ## Usage
 
-Add notes about how to use the system.
+### To create or update an item
+
+```bash
+curl -v -X "PUT" -H "Content-Type: application/json" -d "{\"id\": \"abcdef234\", \"price\": 12345, \"name\": \"myitem\"}" https://hqzxsonx59.execute-api.us-east-1.amazonaws.com/items
+```
+
+### To get all items
+
+```bash
+curl -v https://hqzxsonx59.execute-api.us-east-1.amazonaws.com/items
+```
+
+### To get an item
+
+```bash
+curl -v https://hqzxsonx59.execute-api.us-east-1.amazonaws.com/items/abcdef234
+```
+
+### To delete an item
+
+```bash
+curl -v -X "DELETE" https://hqzxsonx59.execute-api.us-east-1.amazonaws.com/items/abcdef234
+```
+
+## See Also
+
+- [Tutorial: Build a CRUD API with Lambda and DynamoDB](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-dynamo-db.html)
 
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
-
-## See Also

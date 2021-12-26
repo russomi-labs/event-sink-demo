@@ -12,7 +12,7 @@
 
 ## Overview
 
-Write about 1-2 paragraphs describing the purpose of your project.
+In this tutorial, you create a serverless API that creates, reads, updates, and deletes items from a DynamoDB table. DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability.
 
 ## Getting Started
 

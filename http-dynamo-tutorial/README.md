@@ -1,4 +1,4 @@
-# crud-api-tutorial
+# http-dynamo-tutorial
 
 ## Table of Contents
 

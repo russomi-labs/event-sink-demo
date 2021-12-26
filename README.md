@@ -1,9 +1,12 @@
-# Project Title
+# event-sink-demo
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Overview](#overview)
 - [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installing](#installing)
 - [Usage](#usage)
 - [Contributing](#contributing)
 

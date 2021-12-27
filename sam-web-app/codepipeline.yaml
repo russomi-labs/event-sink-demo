@@ -614,7 +614,7 @@ Resources:
       ServiceRole: !GetAtt CodeBuildServiceRole.Arn
       Source:
         Type: CODEPIPELINE
-        BuildSpec: pipeline/buildspec_build_package.yml
+        BuildSpec: sam-web-app/pipeline/buildspec_build_package.yml
 
   # Uncomment and modify the following step for running the integration tests
   # CodeBuildProjectIntegrationTest:
@@ -645,7 +645,7 @@ Resources:
       ServiceRole: !GetAtt CodeBuildServiceRole.Arn
       Source:
         Type: CODEPIPELINE
-        BuildSpec: pipeline/buildspec_deploy.yml
+        BuildSpec: sam-web-app/pipeline/buildspec_deploy.yml
 Outputs:
   CodeStarConnectionArn:
     Condition: CreateConnection

@@ -184,18 +184,18 @@ Resources:
               RunOrder: 2
 
         # Uncomment and modify the following step for running the unit-tests
-        # - Name: UnitTest
-        #   Actions:
-        #     - Name: UnitTest
-        #       ActionTypeId:
-        #         Category: Build
-        #         Owner: AWS
-        #         Provider: CodeBuild
-        #         Version: "1"
-        #       Configuration:
-        #         ProjectName: !Ref CodeBuildProjectUnitTest
-        #       InputArtifacts:
-        #         - Name: SourceCodeAsZip
+        - Name: UnitTest
+          Actions:
+            - Name: UnitTest
+              ActionTypeId:
+                Category: Build
+                Owner: AWS
+                Provider: CodeBuild
+                Version: "1"
+              Configuration:
+                ProjectName: !Ref CodeBuildProjectUnitTest
+              InputArtifacts:
+                - Name: SourceCodeAsZip
 
         - !If
           - IsFeatureBranchPipeline
@@ -257,17 +257,17 @@ Resources:
                   - Name: BuildArtifactAsZip
                 RunOrder: 1
               # Uncomment the following step for running the integration tests
-              # - Name: IntegrationTest
-              #   ActionTypeId:
-              #     Category: Build
-              #     Owner: AWS
-              #     Provider: CodeBuild
-              #     Version: "1"
-              #   Configuration:
-              #     ProjectName: !Ref CodeBuildProjectIntegrationTest
-              #   InputArtifacts:
-              #     - Name: SourceCodeAsZip
-              #   RunOrder: 2
+              - Name: IntegrationTest
+                ActionTypeId:
+                  Category: Build
+                  Owner: AWS
+                  Provider: CodeBuild
+                  Version: "1"
+                Configuration:
+                  ProjectName: !Ref CodeBuildProjectIntegrationTest
+                InputArtifacts:
+                  - Name: SourceCodeAsZip
+                RunOrder: 2
           - !Ref AWS::NoValue
 
         - !If

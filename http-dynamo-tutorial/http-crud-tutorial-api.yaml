@@ -3,7 +3,7 @@ info:
   title: "http-crud-tutorial-api"
   version: "2021-12-26 21:02:07UTC"
 servers:
-- url: "https://hqzxsonx59.execute-api.us-east-1.amazonaws.com/{basePath}"
+- url: "https://****.execute-api.us-east-1.amazonaws.com/{basePath}"
   variables:
     basePath:
       default: ""
@@ -17,7 +17,7 @@ paths:
         payloadFormatVersion: "2.0"
         type: "aws_proxy"
         httpMethod: "POST"
-        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:877664992965:function:http-crud-tutorial-function/invocations"
+        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:****:function:http-crud-tutorial-function/invocations"
         connectionType: "INTERNET"
     delete:
       responses:
@@ -27,7 +27,7 @@ paths:
         payloadFormatVersion: "2.0"
         type: "aws_proxy"
         httpMethod: "POST"
-        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:877664992965:function:http-crud-tutorial-function/invocations"
+        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:****:function:http-crud-tutorial-function/invocations"
         connectionType: "INTERNET"
     parameters:
     - name: "id"
@@ -45,7 +45,7 @@ paths:
         payloadFormatVersion: "2.0"
         type: "aws_proxy"
         httpMethod: "POST"
-        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:877664992965:function:http-crud-tutorial-function/invocations"
+        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:****:function:http-crud-tutorial-function/invocations"
         connectionType: "INTERNET"
     put:
       responses:
@@ -55,6 +55,6 @@ paths:
         payloadFormatVersion: "2.0"
         type: "aws_proxy"
         httpMethod: "POST"
-        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:877664992965:function:http-crud-tutorial-function/invocations"
+        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:****:function:http-crud-tutorial-function/invocations"
         connectionType: "INTERNET"
 x-amazon-apigateway-importexport-version: "1.0"

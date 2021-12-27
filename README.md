@@ -12,13 +12,15 @@
 
 ## Overview
 
-Write about 1-2 paragraphs describing the purpose of your project.
+> In computing, a sink, event sink or data sink is a class or function designed to receive incoming events from another object or function. This is commonly implemented in C++ as callbacks. Other object-oriented languages, such as Java and C#, have built-in support for sinks by allowing events to be fired to delegate functions.
+>
+> https://en.wikipedia.org/wiki/Sink_(computing)
 
 ## Getting Started
 
 You can [create](https://cli.github.com/manual/gh_repo_create) a new repo using this template via the `gh` cli:
 
-``` bash
+```bash
 # gh repo create [<name>] [flags]
 gh repo create russomi-labs/my-repo \
     --template russomi-labs/template
@@ -28,7 +30,7 @@ gh repo create russomi-labs/my-repo \
 
 What things you need to install the software and how to install them.
 
-``` bash
+```bash
 brew install gh
 ```
 
@@ -57,4 +59,3 @@ Add notes about how to use the system.
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
-

@@ -150,7 +150,7 @@ Resources:
                 RoleArn: !GetAtt PipelineStackCloudFormationExecutionRole.Arn
                 StackName: !Ref AWS::StackName
                 ChangeSetName: !Sub ${AWS::StackName}-ChangeSet
-                TemplatePath: SourceCodeAsZip::codepipeline.yaml
+                TemplatePath: SourceCodeAsZip::sam-web-app/codepipeline.yaml
                 Capabilities: CAPABILITY_NAMED_IAM
                 ParameterOverrides: !Sub |
                   {

@@ -10,10 +10,11 @@
 
 ## Overview
 
-> In this [tutorial](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-dynamo-db.html), you create a serverless API that creates, reads, updates, and
-> deletes items from a DynamoDB table. DynamoDB is a fully managed NoSQL database
-> service that provides fast and predictable performance with seamless
-> scalability.
+> In this
+> [tutorial](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-dynamo-db.html),
+> you create a serverless API that creates, reads, updates, and deletes items
+> from a DynamoDB table. DynamoDB is a fully managed NoSQL database service that
+> provides fast and predictable performance with seamless scalability.
 
 ## Usage
 
@@ -43,7 +44,8 @@ curl -v -X "DELETE" https://hqzxsonx59.execute-api.us-east-1.amazonaws.com/items
 
 ## See Also
 
-- [Tutorial: Build a CRUD API with Lambda and DynamoDB](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-dynamo-db.html)
+- [Tutorial: Build a CRUD API with Lambda and
+  DynamoDB](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-dynamo-db.html)
 
 ## Contributing
 

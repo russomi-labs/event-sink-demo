@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: >
   Example template for an HTTP API that creates, updates, and deletes items in DynamoDB
-  
+
 Globals:
   Function:
     Timeout: 10

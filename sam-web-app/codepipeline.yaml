@@ -20,8 +20,8 @@ Description: >
 
 # If later you need to deploy a new CodePipeline to connect to a non-main git branch, run
 # ```
-# sam deploy -t codepipeline.yaml --stack-name <stack-name> --capabilities=CAPABILITY_IAM \
-#   --parameter-overrides="FeatureGitBranch=<branch-name> CodeStarConnectionArn=<codestar-connection-arn>"
+# sam deploy -t codepipeline.yaml --stack-name event-sink-demo-sam-web-app-russomi-issue4 --capabilities=CAPABILITY_IAM \
+#   --parameter-overrides="FeatureGitBranch=russomi/issue4 CodeStarConnectionArn=arn:aws:codestar-connections:us-east-1:877664992965:connection/a3f9ff53-b7b8-4f02-aa41-65e1ee454cbd"
 # ```
 
 Parameters:

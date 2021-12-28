@@ -1,8 +1,7 @@
 # event-sink-demo
 
-## Table of Contents
+Demo applications to design a event-sink as a service.
 
-- [Table of Contents](#table-of-contents)
 - [Overview](#overview)
 - [Demo Apps](#demo-apps)
 - [Contributing](#contributing)

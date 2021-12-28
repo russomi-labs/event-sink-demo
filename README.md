@@ -15,12 +15,12 @@
 
 ## Demo Apps
 
-- [http-dynamo-tutorial](http-dynamo-tutorial/README.md) - In this tutorial
+- [http-dynamo-tutorial](http-dynamo-tutorial/) - In this tutorial
   you create a serverless API that creates, reads, updates, and deletes items
   from a DynamoDB table. DynamoDB is a fully managed NoSQL database service that
   provides fast and predictable performance with seamless scalability.
 
-- [sam-web-app](sam-web-app/README.md) - This project contains source code and
+- [sam-web-app](sam-web-app/) - This project contains source code and
   supporting files for a serverless application that you can deploy with the AWS
   Serverless Application Model (AWS SAM) command line interface (CLI).
 

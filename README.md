@@ -19,9 +19,10 @@ Demo applications to design a event-sink as a service.
   from a DynamoDB table. DynamoDB is a fully managed NoSQL database service that
   provides fast and predictable performance with seamless scalability.
 
-- [sam-web-app](sam-web-app/) - This project contains source code and
-  supporting files for a serverless application that you can deploy with the AWS
-  Serverless Application Model (AWS SAM) command line interface (CLI).
+- [sam-web-app](sam-web-app/) - This project contains source code and supporting
+  files for a serverless application and a serverless pipeline starter for
+  GitHub and CodePipeline that you can deploy with the AWS Serverless
+  Application Model (AWS SAM) command line interface (CLI).
 
 ## Contributing
 
